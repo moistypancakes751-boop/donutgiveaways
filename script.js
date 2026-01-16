@@ -1,3 +1,3 @@
-function sayHello() {
-    alert("Hey there");
-}
+window.onload = () => {
+  document.body.classList.remove("preload");
+};

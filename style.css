@@ -1,16 +1,279 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding-top: 50px;
+  color: white;
+  overflow-x: hidden;
 }
 
-h1 {
-    color: #333;
+/* ============================= */
+/* BACKGROUND (BLURRED IMAGE) */
+/* ============================= */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("assets/bg.jpg") center / cover no-repeat;
+  filter: blur(14px);
+  transform: scale(1.1);
+  z-index: -2;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 25, 0.9);
+  z-index: -1;
+}
+
+/* ============================= */
+/* COLOR UTILITIES */
+/* ============================= */
+.blue {
+  color: #7aa2ff;
+}
+
+.purple {
+  color: #b17cff;
+}
+
+.discord {
+  color: #5865F2;
+}
+
+/* ============================= */
+/* ANNOUNCEMENT BAR */
+/* ============================= */
+.announcement {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  backdrop-filter: blur(14px);
+  background: rgba(10, 15, 30, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #7aa2ff;
+}
+
+nav a {
+  margin: 0 14px;
+  color: #bdbdbd;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #7aa2ff;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+.hero {
+  text-align: center;
+  padding: 140px 20px 90px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.glow-text {
+  text-shadow: 0 0 35px rgba(130, 150, 255, 0.6);
+}
+
+.hero p {
+  max-width: 720px;
+  margin: auto;
+  color: #cfcfcf;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+.join-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #7aa2ff, #b17cff);
+  padding: 18px 40px;
+  border-radius: 22px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  box-shadow: 0 0 40px rgba(130, 150, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.join-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 60px rgba(130, 150, 255, 0.9);
+}
+
+.join-btn.big {
+  font-size: 20px;
+}
+
+/* ============================= */
+/* WINNERS SECTION */
+/* ============================= */
+.winners {
+  text-align: center;
+  padding: 110px 20px;
+}
+
+.winners h2 {
+  font-size: 36px;
+}
+
+.winners-sub {
+  color: #bdbdbd;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.winner-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.winner {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  padding: 26px;
+  border-radius: 26px;
+  width: 380px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.55);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.winner:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 65px rgba(130, 150, 255, 0.6);
+}
+
+.winner img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 0 30px rgba(130, 150, 255, 0.4);
+}
+
+.winner-name {
+  font-size: 15px;
+  color: #bfa8ff;
+  letter-spacing: 0.3px;
+}
+
+/* ============================= */
+/* DISCORD CTA */
+/* ============================= */
+.discord-cta {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.discord-cta h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.discord-cta p {
+  color: #cfcfcf;
+  margin-bottom: 25px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
+  color: #999;
+}
+
+/* ============================= */
+/* ENTRANCE ANIMATIONS */
+/* ============================= */
+.preload * {
+  animation: none !important;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+.delay-3 {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 1100px) {
+  .winner-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .winner {
+    width: 95%;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .navbar {
+    padding: 16px 20px;
+  }
 }

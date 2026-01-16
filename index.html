@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>DonutSMP Giveaways</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <h1>Hello World 🌍</h1>
-    <p>This is my first website built with VS Code.</p>
+<body class="preload">
 
-    <button onclick="sayHello()">Click Me</button>
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement">
+  🎉 Weekly <span class="blue">DonutSMP</span> Giveaways • Real Payouts
+</div>
 
-    <script src="script.js"></script>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">🍩 DonutSMP Giveaways</div>
+  <nav>
+    <a class="active">Home</a>
+    <a href="#winners">Winners</a>
+    <a href="#discord">Discord</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero fade-up">
+  <h1>
+    Free <span class="blue">DonutSMP</span><br>
+    <span class="purple glow-text">Giveaways</span>
+  </h1>
+
+  <p>
+    Verified giveaways with real in-game payouts.
+    Join our Discord to participate and win big.
+  </p>
+
+  <a href="YOUR_DISCORD_INVITE_LINK" target="_blank" class="join-btn">
+    💬 Join Our Discord
+  </a>
+</section>
+
+<!-- RECENT WINNERS -->
+<section class="winners" id="winners">
+  <h2 class="fade-up">
+    💸 Recent <span class="purple">Winners</span>
+  </h2>
+
+  <p class="winners-sub">
+    Proof of recent DonutSMP payouts
+  </p>
+
+  <div class="winner-cards">
+    <div class="winner fade-up delay-1">
+      <img src="assets/payout1.png" alt="shadowbossking $120M payout">
+      <p class="winner-name">shadowbossking — $120M</p>
+    </div>
+
+    <div class="winner fade-up delay-2">
+      <img src="assets/payout2.png" alt="SB_keung00al $100M payout">
+      <p class="winner-name">SB_keung00al — $100M</p>
+    </div>
+
+    <div class="winner fade-up delay-3">
+      <img src="assets/payout3.png" alt="Super_joe546 $100M payout">
+      <p class="winner-name">Super_joe546 — $100M</p>
+    </div>
+  </div>
+</section>
+
+<!-- DISCORD CTA -->
+<section class="discord-cta fade-up" id="discord">
+  <h2>
+    Join the <span class="discord">Discord</span>
+  </h2>
+
+  <p>
+    All giveaways, winners, and proof are posted in our Discord.
+  </p>
+
+  <a href="YOUR_DISCORD_INVITE_LINK" target="_blank" class="join-btn big">
+    🚀 Enter the Server
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 DonutSMP Giveaways • Not affiliated with Mojang or Microsoft
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
