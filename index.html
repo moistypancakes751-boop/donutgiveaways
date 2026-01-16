@@ -11,7 +11,7 @@
 
 <!-- ANNOUNCEMENT BAR -->
 <div class="announcement">
-  🎉 Weekly <span class="blue">DonutSMP</span> Giveaways • Real Payouts
+  🎉 Weekly <span class="blue">DonutSMP</span> Giveaways • Real In-Game Payouts
 </div>
 
 <!-- NAVBAR -->
@@ -19,6 +19,7 @@
   <div class="logo">🍩 DonutSMP Giveaways</div>
   <nav>
     <a class="active">Home</a>
+    <a href="#stats">Stats</a>
     <a href="#winners">Winners</a>
     <a href="#discord">Discord</a>
   </nav>
@@ -27,43 +28,87 @@
 <!-- HERO -->
 <section class="hero fade-up">
   <h1>
-    Free <span class="blue">DonutSMP</span><br>
-    <span class="purple glow-text">Giveaways</span>
+    Win <span class="purple glow-text">Millions</span> on<br>
+    <span class="blue">DonutSMP</span> — Every Week!
   </h1>
 
-  <p>
-    Verified giveaways with real in-game payouts.
-    Join our Discord to participate and win big.
+  <p class="hero-subtitle">
+    Verified giveaways. Real payouts. No entry fees.<br>
+    Join thousands of players already winning big.
   </p>
 
-  <a href="YOUR_DISCORD_INVITE_LINK" target="_blank" class="join-btn">
-    💬 Join Our Discord
-  </a>
+  <div class="hero-buttons">
+    <a href="YOUR_DISCORD_INVITE_LINK" target="_blank" class="join-btn big">
+      💬 Join Discord & Start Winning
+    </a>
+    <a href="#winners" class="join-btn secondary">
+      View Recent Winners
+    </a>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats fade-up" id="stats">
+  <div class="stat-card">
+    <span class="stat-icon">💰</span>
+    <p class="stat-number">25.4B</p>
+    <h3>Total Payout</h3>
+  </div>
+
+  <div class="stat-card">
+    <span class="stat-icon">🎁</span>
+    <p class="stat-number">1,200+</p>
+    <h3>Giveaways Hosted</h3>
+  </div>
+
+  <div class="stat-card">
+    <span class="stat-icon">👥</span>
+    <p class="stat-number">18,000+</p>
+    <h3>Members</h3>
+  </div>
+
+  <div class="stat-card">
+    <span class="stat-icon">🕒</span>
+    <p class="stat-number">99.9%</p>
+    <h3>Uptime</h3>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about fade-up">
+  <h2>Why Choose <span class="blue">DonutSMP Giveaways</span>?</h2>
+
+  <p>
+    We run transparent, community-driven giveaways with real in-game payouts on DonutSMP.<br>
+    Everything is posted and verified directly in our Discord — no scams, no fees.
+  </p>
+
+  <div class="about-points">
+    <div>✅ Public proof for every payout</div>
+    <div>✅ Zero entry fees or pay-to-enter</div>
+    <div>✅ Active moderation & automation</div>
+    <div>✅ Weekly giveaways + special events</div>
+  </div>
 </section>
 
 <!-- RECENT WINNERS -->
-<section class="winners" id="winners">
-  <h2 class="fade-up">
-    💸 Recent <span class="purple">Winners</span>
-  </h2>
-
-  <p class="winners-sub">
-    Proof of recent DonutSMP payouts
-  </p>
+<section class="winners fade-up" id="winners">
+  <h2>💸 Recent <span class="purple">Winners</span></h2>
+  <p class="winners-sub">Verified DonutSMP payouts — real players, real wins</p>
 
   <div class="winner-cards">
     <div class="winner fade-up delay-1">
-      <img src="payout1.png" alt="shadowbossking $120M payout">
+      <img src="assets/payout1.png" alt="shadowbossking $120M payout">
       <p class="winner-name">shadowbossking — $120M</p>
     </div>
 
     <div class="winner fade-up delay-2">
-      <img src="payout2.png" alt="SB_keung00al $100M payout">
+      <img src="assets/payout2.png" alt="SB_keung00al $100M payout">
       <p class="winner-name">SB_keung00al — $100M</p>
     </div>
 
     <div class="winner fade-up delay-3">
-      <img src="payout3.png" alt="Super_joe546 $100M payout">
+      <img src="assets/payout3.png" alt="Super_joe546 $100M payout">
       <p class="winner-name">Super_joe546 — $100M</p>
     </div>
   </div>
@@ -71,16 +116,11 @@
 
 <!-- DISCORD CTA -->
 <section class="discord-cta fade-up" id="discord">
-  <h2>
-    Join the <span class="discord">Discord</span>
-  </h2>
-
-  <p>
-    All giveaways, winners, and proof are posted in our Discord.
-  </p>
+  <h2>Join the <span class="discord">Discord</span></h2>
+  <p>All giveaways, results, screenshots and proof are shared live in the server.</p>
 
   <a href="YOUR_DISCORD_INVITE_LINK" target="_blank" class="join-btn big">
-    🚀 Enter the Server
+    🚀 Enter the Server Now
   </a>
 </section>
 
@@ -88,6 +128,13 @@
 <footer>
   © 2026 DonutSMP Giveaways • Not affiliated with Mojang or Microsoft
 </footer>
+
+<!-- FLOATING DISCORD BUTTON -->
+<div class="floating-discord">
+  <a href="YOUR_DISCORD_INVITE_LINK" target="_blank" class="floating-btn">
+    <span>💬</span> Join Discord
+  </a>
+</div>
 
 <script src="script.js"></script>
 </body>
